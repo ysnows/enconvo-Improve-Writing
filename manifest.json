@@ -1,6 +1,6 @@
 {
   "homePage" : "https:\/\/github.com\/ysnows\/enconvo-Improve-Writing",
-  "appCast" : "",
+  "appCast" : "https://raw.githubusercontent.com/ysnows/enconvo-Improve-Writing/main/appcast.json",
   "extensionId" : "enconvo.improve-writing",
   "logo" : "ns:improve writting",
   "version" : "0.0.1",
