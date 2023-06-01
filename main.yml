@@ -1,44 +1,43 @@
 name: Improve writing
-version: 0.0.3
+version: 0.0.4
 author: enconvo
-on: {}
+on: { }
 steps:
-- name: ''
-  uses: prompt
-  env:
-    Output:
-      type: bool
-      value: 'true'
-      sort: 3
-      messages: []
-    Model:
-      type: enum
-      value: gpt-3.5-turbo
-      sort: 0
-      messages: []
-    Messages:
-      type: messages
-      value: ''
-      sort: 2
-      messages:
-      - role: system
-        content: 'As a writing improvement assistant, your task is to improve the
+  - name: ''
+    uses: prompt
+    env:
+      Output:
+        type: bool
+        value: 'true'
+        sort: 3
+        messages: [ ]
+      Model:
+        type: enum
+        value: gpt-3.5-turbo
+        sort: 0
+        messages: [ ]
+      Messages:
+        type: messages
+        value: ''
+        sort: 2
+        messages:
+          - role: system
+            content: 'As a writing improvement assistant, your task is to improve the
           spelling, grammar, clarity, concision, and overall readability of the text
           provided, while breaking down long sentences, reducing repetition, and providing
           suggestions for improvement. Please provide only the corrected language
           version of the text based on the text language and avoid including explanations.
           Please begin by editing the following text: {{text|contextText|copiedText}}'
-    Temperature:
-      type: enum
-      value: '0.9'
-      sort: 1
-      messages: []
+      Temperature:
+        type: enum
+        value: '0.9'
+        sort: 1
+        messages: [ ]
 extensionId: enconvo.improve-writing
 logo: ns:improve writting
 description: Improve writing
 async: false
 shortName: ''
 homePage: https://github.com/ysnows/enconvo-Improve-Writing
-appCast: ''
-shortCut: ''
-minAppVersion: ''
+appCast: https://raw.githubusercontent.com/ysnows/enconvo-Improve-Writing/main/appcast.json
+minAppVersion: 1.2.1
